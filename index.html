@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Точно урок?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+
+        nav {
+            background-color: #34495e;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        th {
+            background-color: #799dd7;
+            color: white;
+        }
+
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+
+        .break-row {
+            background-color: #a5a9d6;
+            color: white;
+            font-weight: bold;
+        }
+
+
+        .profile-card {
+            background-color: #ffffff;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 4px;
+        }
+
+
+        .feedback-form button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        .task-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav>
+
+
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#schedule">Расписание</a></li>
+            <li><a href="student">Профиль ученика</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="Educational process">Воспитательный процесс</a></li>
+            <li><a href="The learning process">Учебный процесс</a></li>
+        </ul>
+
+
+    </nav>
+
+
+    <h1>Добро пожаловать на Школьный Портал</h1>
+    <p>Здесь вы можете ознакомиться с расписанием уроков и основной информацией для учащихся.</p>
+
+
+    <h2 id="schedule">Расписание занятий</h2>
+    <table>
+        <caption>Расписаник на неделю</caption>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Среда</th>
+                <th>Четверг</th>
+                <th>Пятница</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1</strong></td>
+                <th>Математика</th>
+                <th>Физика</th>
+                <th>Инфа</th>
+                <th>Математика</th>
+                <th>История</th>
+            </tr>
+            <tr>
+                <td><strong>2</strong></td>
+                <td>Русский язык</td>
+                <td>Математика</td>
+                <td>Английский</td>
+                <td>Физика</td>
+                <td>Информатика</td>
+            </tr>
+            <tr class="break-row">
+                <td colspan="6">Перерыв (Большая перемена)</td>
+            </tr>
+            <tr>
+                <td><strong>3</strong></td>
+                <td>Информатика</td>
+                <td>Химия</td>
+                <td>География</td>
+                <td>Литература</td>
+                <td>Биология</td>
+            </tr>
+            <tr>
+                <td><strong>4</strong></td>
+                <td>Физкультура</td>
+                <td>История</td>
+                <td>Литература</td>
+                <td>Английский</td>
+                <td>Обществознание</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2 id="student">Информация об ученике</h2>
+    <div class="profile-card">
+    <h3>Класс: 8 «А»</h3>
+    <p><strong>Классный руководитель</strong>Байбусин Гульнара Исбасаровна</p>
+    <p><strong>Дежурный класс на этой неделе:</strong>Да</p>
+    </div>
+
+
+    <h2 id="contact">Обратная связь</h2>
+     <div class="feedback-form">
+        <form action="#" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите имя..." required>
+
+
+
+
+            <label for="message">Вопрос или предложение:</label>
+            <textarea id="message" name="message" rows="1" placeholder="Напишите сообщение..."></textarea>
+
+
+
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
+
